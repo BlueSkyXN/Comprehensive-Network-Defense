@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
 
@@ -28,7 +28,7 @@ jobs:
         python /home/runner/work/Comprehensive-Network-Defense/Comprehensive-Network-Defense/Scripts/IP-to-CIDR.py "/home/runner/work/Comprehensive-Network-Defense/Comprehensive-Network-Defense/IPs/Chaitin.txt" "/home/runner/work/Comprehensive-Network-Defense/Comprehensive-Network-Defense/IPs/Chaitin-Plus.txt"
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Chaitin-Plus.txt
         path: /home/runner/work/Comprehensive-Network-Defense/Comprehensive-Network-Defense/IPs/Chaitin-Plus.txt
