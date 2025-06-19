@@ -1,8 +1,6 @@
 name: Build-Chaitin-Plus
 
 on:
-  push:
-    branches: [ master ]
   workflow_dispatch:
 
 
